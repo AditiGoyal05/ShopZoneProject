@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body id="home">
+<body >
     <header id="header__style">
         <div id="header__style__two">
             <img src="./images/logo.jpg" width="80px" height="80px" />
-            <div class="center__style">ADDUZONE</div>
+            <div class="center__style"> SHOPZONE</div>
         </div>
     </header>
     <nav class="nav__style">
@@ -29,34 +29,11 @@
             <a href="#home"><i class="material-icons header_icon_style">home</i></a>
             <a><i class="material-icons header_icon_style">shopping_cart</i></a>
             <a><i class="material-icons header_icon_style">favorite</i></a>
-            <button onclick="openForm()" class="btn_login"><i
+            <button onclick="popup()" class="btn_login"><i
                     class="material-icons header_icon_style">login</i></button>
         </div>
     </nav>
-    <main id="main__style">
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>You are not logged in!!</p>
-                <button onclick="openForm()">LOG IN</button>
-            </div>
-        </div>
-        <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
-        <div id="myForm" class="Form">
-            <form class="form_container">
-                <h2 style="text-align: center;">LOG IN</h2>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Enter Email" required /><br><br>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-
-                <button type="submit" class="btn">Login</button><br><br>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button><br><br>
-                <p>New Customer?<a style="color: blue; cursor: pointer;" onclick="callFunc()">Register</a></p>
-                <!-- <button onclick="callFunc()">Register</a> -->
-            </form>
-        </div>
+    <main id="blur" class="shop main_blur">
         <div class="slideShow-container">
             <div class="slide" style="display: block;">
                 <img src="./images/shop1.webp" class="shop__style" />
@@ -88,24 +65,30 @@
                     <img src="./images/cos2.jpg" class="img_size" />
                     <div class="price__style">Ponds Moisturizer Rs:250 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/cos3.jpg" class="img_size" />
                     <div class="price__style">Himalaya Soap Rs:60 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/cos4.jpg" class="img_size" />
                     <div class="price__style">Dove Shampoo Rs:300 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
@@ -117,32 +100,40 @@
                     <img src="./images/fsn1.jpg" class="img_size" />
                     <div class="price__style">Silk Saree Rs:3000 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/fsn2.jpg" class="img_size" />
                     <div class="price__style">Sports Shoes Rs:2000 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/fsn4.webp" class="img_size" />
                     <div class="price__style">TShirt Rs:500 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/fsn3.jpg" class="img_size" />
                     <div class="price__style">Pants Rs:999 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
@@ -154,32 +145,40 @@
                     <img src="./images/s1.jpg" class="img_size" />
                     <div class="price__style">Basketball Rs:350 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/s2.jpg" class="img_size" />
                     <div class="price__style">Badmintion Rs:520 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/s3.jpg" class="img_size" />
                     <div class="price__style">Cricket Bat Rs:430</div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/s4.jpg" class="img_size" />
                     <div class="price__style">Golf Rs:450 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
@@ -191,32 +190,40 @@
                     <img src="./images/grc1.jpg" class="img_size" />
                     <div class="price__style">Amul Milk Rs:28 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/grc2.jpg" class="img_size" />
                     <div class="price__style">Britania Bread Rs:30 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/grc3.jpg" class="img_size" />
                     <div class="price__style">Amul Butter Rs: </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/grc4.jpg" class="img_size" />
                     <div class="price__style">Dabur Honey Rs: </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
@@ -228,32 +235,40 @@
                     <img src="./images/e1.jpg" class="img_size" />
                     <div class="price__style">Rs </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/e2.jpg" class="img_size" />
                     <div class="price__style">Rs </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/e3.jfif" class="img_size" />
                     <div class="price__style">Rs </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/e4.jpg" class="img_size" />
                     <div class="price__style">Rs </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
@@ -265,37 +280,76 @@
                     <img src="./images/hd1.jpg" class="img_size" />
                     <div class="price__style">Blackout Curtain Rs:930 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/hd2.jpg" class="img_size" />
                     <div class="price__style">Ganesha fountain Rs:3500 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/hd3.jpg" class="img_size" />
                     <div class="price__style">Ceramic Vase Rs:699 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
                 <div class="box__style">
                     <img src="./images/hd4.jpg" class="img_size" />
                     <div class="price__style">Candlestick Holder Rs:599 </div>
                     <div class="div__icon__style">
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">add_shopping_cart</i></button>
-                        <button class="a__style" onclick="cartfunction()"><i class="material-icons cartBtn">favorite_border</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">add_shopping_cart</i></button>
+                        <button class="a__style" onclick="cartfunction()"><i
+                                class="material-icons cartBtn">favorite_border</i></button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <div id="popup">
+        <div class="login">
+            <h2 style="text-align: center; font-size: 25px;">LOG IN</h2>
+            <div class="row">
+                <button onclick="popup()"><i class="material-icons">close</i></button><br>
+              </div>
+            </div>
+        <form class="form_container">
+           <div class="row">
+               <div class="col-25">
+                <label for="email">Email</label>
+               </div>
+               <div class="col-75">
+                <input type="email" name="email" placeholder="Enter Email" required /><br><br>
+               </div>
+           </div>
+           <div>
+               <div class="col-25">
+                <label for="psw"><b>Password</b></label>
+               </div>
+               <div class="col-75">
+                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+               </div>
+           </div>
+
+           <div class="row">
+            <input type="submit" value="Login">
+          </div>
+            <p>New Customer?<a style="color: rgb(0, 153, 255); cursor: pointer;" onclick="callFunc()">Register</a></p>
+        </form>
+    </div>
     <footer id="footer__style">
         <p id="mail">CONTACT:</p>
         <button href="mailto:yg311997@gmail.com">Aditi Goyal</button>
