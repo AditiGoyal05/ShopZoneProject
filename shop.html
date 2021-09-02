@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body >
+<body>
     <header id="header__style">
         <div id="header__style__two">
             <img src="./images/logo.jpg" width="80px" height="80px" />
@@ -29,8 +29,16 @@
             <a href="#home"><i class="material-icons header_icon_style">home</i></a>
             <a><i class="material-icons header_icon_style">shopping_cart</i></a>
             <a><i class="material-icons header_icon_style">favorite</i></a>
-            <button onclick="popup()" class="btn_login"><i
-                    class="material-icons header_icon_style">login</i></button>
+            <button onclick="popup()" class="btn_login"><i class="material-icons header_icon_style">login</i></button>
+        </div>
+    </nav>
+    <nav class="nav__style" id="nav2">
+        <div class="center__style">
+            <a href="#mail"><i class="material-icons header_icon_style">email</i></a>
+            <a href="#home"><i class="material-icons header_icon_style">home</i></a>
+            <a><i class="material-icons header_icon_style">shopping_cart</i></a>
+            <a><i class="material-icons header_icon_style">favorite</i></a>
+            <button onclick="popup()" class="btn_login"><i class="material-icons header_icon_style">login</i></button>
         </div>
     </nav>
     <main id="blur" class="shop main_blur">
@@ -324,29 +332,29 @@
             <h2 style="text-align: center; font-size: 25px;">LOG IN</h2>
             <div class="row">
                 <button onclick="popup()"><i class="material-icons">close</i></button><br>
-              </div>
             </div>
+        </div>
         <form class="form_container">
-           <div class="row">
-               <div class="col-25">
-                <label for="email">Email</label>
-               </div>
-               <div class="col-75">
-                <input type="email" name="email" placeholder="Enter Email" required /><br><br>
-               </div>
-           </div>
-           <div>
-               <div class="col-25">
-                <label for="psw"><b>Password</b></label>
-               </div>
-               <div class="col-75">
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-               </div>
-           </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" placeholder="Enter Email" required /><br><br>
+                </div>
+            </div>
+            <div>
+                <div class="col-25">
+                    <label for="psw"><b>Password</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+                </div>
+            </div>
 
-           <div class="row">
-            <input type="submit" value="Login">
-          </div>
+            <div class="row">
+                <input type="submit" value="Login">
+            </div>
             <p>New Customer?<a style="color: rgb(0, 153, 255); cursor: pointer;" onclick="callFunc()">Register</a></p>
         </form>
     </div>
